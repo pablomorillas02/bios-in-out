@@ -2,15 +2,15 @@
 
 Este repositorio contiene un programa simple de edición de texto para la terminal, escrito en lenguaje ensamblador para sistemas x86. 
 
-Este programa usa la funciones de la interrupciones 10h y 16h para poder emular el funcionamiento de introducción de texto de una terminal.
+Este programa usa la funciones de las interrupciones 10h y 16h para poder emular el funcionamiento de introducción de texto de una terminal.
 
 El programa permite al usuario escribir texto directamente en la pantalla, con soporte para manejar teclas especiales y comandos básicos de edición.
 
 ## Características
 
 - **Escritura en tiempo real**: se van imprimiendo los caracteres que el usuario introduzca por teclado.
-- **Soporte para teclas especiales**: se incluye el uso de teclas como _backspace_ para borrar o _intro_ para un salto de línea.
-- **Limpieza de pantalla**: al pulsar la combinación de teclas _ctrl + intro_ se borrara toda la pantalla.
+- **Soporte para teclas especiales**: se incluye el uso de teclas como _BACKSPACE_ para borrar o _INTRO_ para un salto de línea.
+- **Limpieza de pantalla**: al pulsar la combinación de teclas _CTRL + INTRO_ se borrara toda la pantalla.
 - **Movimiento del cursor**: el programa actualiza y maneja la posición del cursor conforme el usuario escribe o borra texto.
 
 ## Puesta en marcha
@@ -31,12 +31,12 @@ Para ejecutar este programa, necesitarás un entorno que pueda compilar y ejecut
 	```console
 	dosbox `pwd`
 	```
-	Se nos abrirá el programa, si presionamos el tabulador, se nos pondrá el nombre del programa, si presionamos _intro_ ya estaremos ejecutando el programa.
+	Se nos abrirá el programa, si presionamos el tabulador, se nos pondrá el nombre del programa, si presionamos _INTRO_ ya estaremos ejecutando el programa.
 
 ### Uso
 
 -  **Escribir texto**: Simplemente comienza a escribir para ver los caracteres aparecer en pantalla.
--  **Borrar**: Presiona _backspace_ para borrar el último carácter escrito.
--  **Nueva línea**: Presiona _intro_ para mover el cursor a la siguiente línea.
--  **Salir**: Presiona _esc_ para terminar la ejecución del programa.
--  **Limpiar pantalla**: Mantén presionado _ctrl_ y presiona _intro_ para limpiar la pantalla.
+-  **Borrar**: Presiona _BACKSPACE_ para borrar el último carácter escrito.
+-  **Nueva línea**: Presiona _INTRO_ para mover el cursor a la siguiente línea.
+-  **Salir**: Presiona _ESC_ para terminar la ejecución del programa.
+-  **Limpiar pantalla**: Mantén presionado _CTRL_ y presiona _INTRO_ para limpiar la pantalla.
